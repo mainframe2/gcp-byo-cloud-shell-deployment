@@ -5,4 +5,5 @@ gcloud projects add-iam-policy-binding $1 --member=serviceAccount:frame-prod@fra
 gcloud projects add-iam-policy-binding $1 --member=serviceAccount:frame-prod@frame-customer-iaas-prod.iam.gserviceaccount.com --role=roles/compute.securityAdmin
 gcloud projects add-iam-policy-binding $1 --member=serviceAccount:frame-prod@frame-customer-iaas-prod.iam.gserviceaccount.com --role=roles/compute.storageAdmin
 gcloud projects add-iam-policy-binding $1 --member=serviceAccount:frame-prod@frame-customer-iaas-prod.iam.gserviceaccount.com --role=roles/dns.admin
+gcloud projects add-iam-policy-binding $1 --member=serviceAccount:frame-prod@frame-customer-iaas-prod.iam.gserviceaccount.com --role=roles/iam.serviceAccountUser
 cd .. && rm -fR gcp-byo-cloud-shell-deployment
